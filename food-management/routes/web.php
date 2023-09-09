@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/foodManagement', function () {
+    return view('FoodManagements.index');
+})->middleware(['auth', 'verified'])->name('food');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
