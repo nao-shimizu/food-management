@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\FoodManagement;
 
 class FoodManagementController extends Controller
 {
@@ -13,7 +14,25 @@ class FoodManagementController extends Controller
      */
     public function index()
     {
-        //
+        return view('FoodManagements.index');
+    }
+
+    public function ingredientList()
+    {
+        return view('FoodManagements.ingredients-list');
+    }
+
+    public function ingredientInput()
+    {
+        return view('FoodManagements.ingredients-input');
+    }
+    public function foodList()
+    {
+        return view('FoodManagements.food-list');
+    }
+    public function foodInput()
+    {
+        return view('FoodManagements.food-input');
     }
 
     /**

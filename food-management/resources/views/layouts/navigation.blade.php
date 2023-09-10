@@ -17,8 +17,28 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('food')" :active="request()->routeIs('food')">
-                        {{ __('食材管理') }}
+                    <x-nav-link :href="route('food.top')" :active="request()->routeIs('food.top')">
+                        {{ __('トップ') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('ingredients.list')" :active="request()->routeIs('ingredients.list')">
+                        {{ __('食材一覧') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('ingredients.input')" :active="request()->routeIs('ingredients.input')">
+                        {{ __('食材登録') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('food.list')" :active="request()->routeIs('food.list')">
+                        {{ __('料理一覧') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('food.input')" :active="request()->routeIs('food.input')">
+                        {{ __('料理登録') }}
                     </x-nav-link>
                 </div>
             </div>
